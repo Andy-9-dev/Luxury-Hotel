@@ -84,6 +84,13 @@ const Header = ({ darkMode, setDarkMode }) => {
             </button>
 
             <Link
+              to="/login"
+              className="px-4 py-2 text-gray-700 dark:text-gray-300 hover:text-primary dark:hover:text-primary transition-colors duration-200 font-medium"
+            >
+              Login
+            </Link>
+
+            <Link
               to="/booking"
               className="px-6 py-2.5 bg-primary text-white rounded-lg hover:bg-primary/90 transition-all duration-200 font-semibold shadow-lg hover:shadow-xl"
             >
@@ -151,6 +158,13 @@ const Header = ({ darkMode, setDarkMode }) => {
                   </Link>
                 )
               ))}
+              <Link
+                to="/login"
+                onClick={() => setIsMenuOpen(false)}
+                className="text-gray-700 dark:text-gray-300 hover:text-primary dark:hover:text-primary transition-colors duration-200 font-medium"
+              >
+                Login
+              </Link>
               <Link
                 to="/booking"
                 onClick={() => setIsMenuOpen(false)}
