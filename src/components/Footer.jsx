@@ -13,31 +13,31 @@ const Footer = () => {
   return (
     <footer id="contact" className="bg-gray-900 dark:bg-black text-gray-300">
       {/* Main Footer Content */}
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-16">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 sm:gap-12">
           {/* Brand Column */}
           <div>
-            <div className="flex items-center space-x-2 mb-6">
+            <div className="flex items-center space-x-2 mb-4 sm:mb-6">
               <div className="w-10 h-10 bg-primary rounded-lg flex items-center justify-center">
-                <span className="text-white font-display text-xl font-bold">RK</span>
+                <span className="text-white font-display text-lg sm:text-xl font-bold">RK</span>
               </div>
-              <span className="text-xl font-display font-bold text-white">
+              <span className="text-lg sm:text-xl font-display font-bold text-white">
                 Royal Kiana
               </span>
             </div>
-            <p className="text-gray-400 mb-6">
+            <p className="text-gray-400 mb-4 sm:mb-6 text-sm sm:text-base">
               Experience unparalleled luxury and comfort in the heart of paradise. 
               Your dream vacation awaits at Royal Kiana Suites.
             </p>
-            <div className="flex space-x-4">
+            <div className="flex space-x-3 sm:space-x-4">
               <a
                 href="https://facebook.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-10 h-10 bg-gray-800 hover:bg-primary rounded-lg flex items-center justify-center transition-colors duration-200"
+                className="w-9 h-9 sm:w-10 sm:h-10 bg-gray-800 hover:bg-primary rounded-lg flex items-center justify-center transition-colors duration-200"
                 aria-label="Facebook"
               >
-                <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                <svg className="w-4 h-4 sm:w-5 sm:h-5" fill="currentColor" viewBox="0 0 24 24">
                   <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
                 </svg>
               </a>
@@ -79,30 +79,30 @@ const Footer = () => {
 
           {/* Quick Links */}
           <div>
-            <h3 className="text-white font-display font-bold text-lg mb-6">Quick Links</h3>
-            <ul className="space-y-3">
+            <h3 className="text-white font-display font-bold text-base sm:text-lg mb-4 sm:mb-6">Quick Links</h3>
+            <ul className="space-y-2 sm:space-y-3">
               <li>
-                <a href="#home" className="hover:text-primary transition-colors duration-200">
+                <a href="#home" className="text-gray-400 hover:text-primary transition-colors duration-200 text-sm sm:text-base">
                   Home
                 </a>
               </li>
               <li>
-                <a href="#offers" className="hover:text-primary transition-colors duration-200">
+                <a href="#offers" className="text-gray-400 hover:text-primary transition-colors duration-200 text-sm sm:text-base">
                   Our Suites
                 </a>
               </li>
               <li>
-                <a href="#testimonials" className="hover:text-primary transition-colors duration-200">
+                <a href="#testimonials" className="text-gray-400 hover:text-primary transition-colors duration-200 text-sm sm:text-base">
                   Testimonials
                 </a>
               </li>
               <li>
-                <a href="#staff" className="hover:text-primary transition-colors duration-200">
+                <a href="#staff" className="text-gray-400 hover:text-primary transition-colors duration-200 text-sm sm:text-base">
                   Staff Portal
                 </a>
               </li>
               <li>
-                <a href="#book" className="hover:text-primary transition-colors duration-200">
+                <a href="#book" className="text-gray-400 hover:text-primary transition-colors duration-200 text-sm sm:text-base">
                   Book Now
                 </a>
               </li>
@@ -111,34 +111,34 @@ const Footer = () => {
 
           {/* Contact Info */}
           <div>
-            <h3 className="text-white font-display font-bold text-lg mb-6">Contact Us</h3>
-            <ul className="space-y-4">
-              <li className="flex items-start space-x-3">
-                <svg className="w-5 h-5 text-primary flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <h3 className="text-white font-display font-bold text-base sm:text-lg mb-4 sm:mb-6">Contact Us</h3>
+            <ul className="space-y-3 sm:space-y-4">
+              <li className="flex items-start space-x-2 sm:space-x-3">
+                <svg className="w-4 h-4 sm:w-5 sm:h-5 text-primary flex-shrink-0 mt-0.5 sm:mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
                 </svg>
-                <span>123 Luxury Avenue, Paradise City, PC 12345</span>
+                <span className="text-gray-400 text-xs sm:text-sm">123 Luxury Avenue, Paradise City, PC 12345</span>
               </li>
-              <li className="flex items-start space-x-3">
-                <svg className="w-5 h-5 text-primary flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <li className="flex items-start space-x-2 sm:space-x-3">
+                <svg className="w-4 h-4 sm:w-5 sm:h-5 text-primary flex-shrink-0 mt-0.5 sm:mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
                 </svg>
-                <div>
-                  <a href="tel:+1234567890" className="hover:text-primary transition-colors duration-200">
+                <div className="text-xs sm:text-sm">
+                  <a href="tel:+1234567890" className="text-gray-400 hover:text-primary transition-colors duration-200">
                     +1 (234) 567-890
                   </a>
                   <br />
-                  <a href="tel:+1234567891" className="hover:text-primary transition-colors duration-200">
+                  <a href="tel:+1234567891" className="text-gray-400 hover:text-primary transition-colors duration-200">
                     +1 (234) 567-891
                   </a>
                 </div>
               </li>
-              <li className="flex items-start space-x-3">
-                <svg className="w-5 h-5 text-primary flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <li className="flex items-start space-x-2 sm:space-x-3">
+                <svg className="w-4 h-4 sm:w-5 sm:h-5 text-primary flex-shrink-0 mt-0.5 sm:mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                 </svg>
-                <a href="mailto:info@royalkiana.com" className="hover:text-primary transition-colors duration-200">
+                <a href="mailto:info@royalkiana.com" className="text-gray-400 hover:text-primary transition-colors duration-200 text-xs sm:text-sm">
                   info@royalkiana.com
                 </a>
               </li>
@@ -147,27 +147,29 @@ const Footer = () => {
 
           {/* Newsletter */}
           <div>
-            <h3 className="text-white font-display font-bold text-lg mb-6">Newsletter</h3>
-            <p className="text-gray-400 mb-4">
+            <h3 className="text-white font-display font-bold text-base sm:text-lg mb-4 sm:mb-6">Newsletter</h3>
+            <p className="text-gray-400 mb-3 sm:mb-4 text-xs sm:text-sm">
               Subscribe to receive exclusive offers and updates.
             </p>
-            <form onSubmit={handleNewsletterSubmit} className="space-y-3">
-              <input
-                type="email"
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
-                placeholder="Your email address"
-                className="w-full px-4 py-3 rounded-lg bg-gray-800 border border-gray-700 text-white placeholder-gray-500 focus:ring-2 focus:ring-primary focus:border-transparent transition-colors"
-                required
-              />
-              <button
-                type="submit"
-                className="w-full px-4 py-3 bg-primary text-white rounded-lg hover:bg-primary/90 transition-colors duration-200 font-semibold"
-              >
-                Subscribe
-              </button>
+            <form onSubmit={handleNewsletterSubmit} className="space-y-2 sm:space-y-3">
+              <div className="flex flex-col sm:flex-row gap-2">
+                <input
+                  type="email"
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
+                  placeholder="Your email"
+                  className="flex-1 px-3 sm:px-4 py-2 sm:py-3 rounded-lg bg-gray-800 border border-gray-700 text-white placeholder-gray-500 focus:ring-2 focus:ring-primary focus:border-transparent transition-all duration-200 text-xs sm:text-sm"
+                  required
+                />
+                <button
+                  type="submit"
+                  className="px-4 sm:px-6 py-2 sm:py-3 bg-primary text-white rounded-lg hover:bg-primary/90 transition-all duration-200 font-semibold whitespace-nowrap text-xs sm:text-sm shadow-lg hover:shadow-xl"
+                >
+                  Subscribe
+                </button>
+              </div>
             </form>
-            <p className="text-xs text-gray-500 mt-3">
+            <p className="text-xs text-gray-500 mt-2 sm:mt-3">
               We respect your privacy. Unsubscribe at any time.
             </p>
           </div>
@@ -176,12 +178,12 @@ const Footer = () => {
 
       {/* Bottom Bar */}
       <div className="border-t border-gray-800">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-6">
-          <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
-            <p className="text-gray-400 text-sm text-center md:text-left">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-4 sm:py-6">
+          <div className="flex flex-col sm:flex-row justify-between items-center space-y-3 sm:space-y-0 text-xs sm:text-sm">
+            <p className="text-gray-400 text-center sm:text-left">
               © 2024 Royal Kiana Suites. All rights reserved.
             </p>
-            <div className="flex flex-wrap justify-center gap-6 text-sm">
+            <div className="flex flex-wrap justify-center gap-3 sm:gap-6">
               <a href="#" className="text-gray-400 hover:text-primary transition-colors duration-200">
                 Privacy Policy
               </a>

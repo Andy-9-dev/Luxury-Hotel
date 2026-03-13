@@ -87,14 +87,14 @@ const Offers = () => {
         </div>
 
         {/* Offers Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
           {offers.map((offer) => (
             <div
               key={offer.id}
-              className="group bg-white dark:bg-surface-dark rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2"
+              className="group bg-white dark:bg-surface-dark rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 flex flex-col h-full"
             >
               {/* Image */}
-              <div className="relative h-64 overflow-hidden">
+              <div className="relative h-56 sm:h-64 overflow-hidden">
                 <img
                   src={offer.image}
                   alt={offer.title}
@@ -103,31 +103,31 @@ const Offers = () => {
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
                 
                 {/* Badge */}
-                <div className={`absolute top-4 right-4 ${offer.badgeColor} text-white px-3 py-1 rounded-full text-sm font-semibold`}>
+                <div className={`absolute top-3 sm:top-4 right-3 sm:right-4 ${offer.badgeColor} text-white px-3 py-1 rounded-full text-xs sm:text-sm font-semibold`}>
                   {offer.badge}
                 </div>
 
                 {/* Price */}
-                <div className="absolute bottom-4 left-4 text-white">
-                  <div className="text-3xl font-display font-bold">{offer.price}</div>
-                  <div className="text-sm text-gray-200">{offer.period}</div>
+                <div className="absolute bottom-3 sm:bottom-4 left-3 sm:left-4 text-white">
+                  <div className="text-2xl sm:text-3xl font-display font-bold">{offer.price}</div>
+                  <div className="text-xs sm:text-sm text-gray-200">{offer.period}</div>
                 </div>
               </div>
 
               {/* Content */}
-              <div className="p-6">
-                <h3 className="text-2xl font-display font-bold text-gray-900 dark:text-white mb-2">
+              <div className="p-5 sm:p-6 flex flex-col flex-grow">
+                <h3 className="text-lg sm:text-2xl font-display font-bold text-gray-900 dark:text-white mb-2">
                   {offer.title}
                 </h3>
-                <p className="text-gray-600 dark:text-gray-400 mb-4">
+                <p className="text-sm sm:text-base text-gray-600 dark:text-gray-400 mb-4">
                   {offer.description}
                 </p>
 
                 {/* Features */}
-                <div className="grid grid-cols-2 gap-2 mb-6">
+                <div className="grid grid-cols-2 gap-2 mb-6 flex-grow">
                   {offer.features.map((feature, index) => (
-                    <div key={index} className="flex items-center space-x-2 text-sm text-gray-700 dark:text-gray-300">
-                      <svg className="w-4 h-4 text-primary flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                    <div key={index} className="flex items-center space-x-2 text-xs sm:text-sm text-gray-700 dark:text-gray-300">
+                      <svg className="w-3 h-3 sm:w-4 sm:h-4 text-primary flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                         <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                       </svg>
                       <span>{feature}</span>
@@ -139,7 +139,7 @@ const Offers = () => {
                 <Link
                   to="/booking"
                   state={{ selectedOffer: offer }}
-                  className="w-full py-3 bg-primary text-white rounded-lg hover:bg-primary/90 transition-colors duration-200 font-semibold block text-center"
+                  className="w-full py-3 bg-primary text-white rounded-lg hover:bg-primary/90 transition-all duration-200 font-semibold block text-center shadow-lg hover:shadow-xl"
                 >
                   Book Now
                 </Link>

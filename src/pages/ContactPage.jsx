@@ -57,18 +57,18 @@ const ContactPage = () => {
                 Reach out to us through any of the following channels. We're available 24/7 to assist you.
               </p>
 
-              <div className="space-y-6">
+              <div className="space-y-4 sm:space-y-6">
                 {/* Address */}
-                <div className="flex items-start space-x-4">
-                  <div className="w-12 h-12 bg-primary/20 rounded-lg flex items-center justify-center flex-shrink-0">
-                    <svg className="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <div className="flex items-start space-x-3 sm:space-x-4">
+                  <div className="w-10 h-10 sm:w-12 sm:h-12 bg-primary/20 rounded-lg flex items-center justify-center flex-shrink-0">
+                    <svg className="w-5 h-5 sm:w-6 sm:h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
                     </svg>
                   </div>
                   <div>
-                    <h3 className="font-semibold text-gray-900 dark:text-white mb-1">Address</h3>
-                    <p className="text-gray-600 dark:text-gray-400">
+                    <h3 className="font-semibold text-gray-900 dark:text-white mb-1 text-sm sm:text-base">Address</h3>
+                    <p className="text-sm sm:text-base text-gray-600 dark:text-gray-400">
                       123 Luxury Avenue<br />
                       Paradise City, PC 12345
                     </p>
@@ -76,47 +76,47 @@ const ContactPage = () => {
                 </div>
 
                 {/* Phone */}
-                <div className="flex items-start space-x-4">
-                  <div className="w-12 h-12 bg-brand-green/20 rounded-lg flex items-center justify-center flex-shrink-0">
-                    <svg className="w-6 h-6 text-brand-green" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <div className="flex items-start space-x-3 sm:space-x-4">
+                  <div className="w-10 h-10 sm:w-12 sm:h-12 bg-brand-green/20 rounded-lg flex items-center justify-center flex-shrink-0">
+                    <svg className="w-5 h-5 sm:w-6 sm:h-6 text-brand-green" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
                     </svg>
                   </div>
                   <div>
-                    <h3 className="font-semibold text-gray-900 dark:text-white mb-1">Phone</h3>
-                    <p className="text-gray-600 dark:text-gray-400">
-                      <a href="tel:+1234567890" className="hover:text-primary">+1 (234) 567-890</a><br />
-                      <a href="tel:+1234567891" className="hover:text-primary">+1 (234) 567-891</a>
+                    <h3 className="font-semibold text-gray-900 dark:text-white mb-1 text-sm sm:text-base">Phone</h3>
+                    <p className="text-sm sm:text-base text-gray-600 dark:text-gray-400">
+                      <a href="tel:+1234567890" className="hover:text-primary transition-colors">+1 (234) 567-890</a><br />
+                      <a href="tel:+1234567891" className="hover:text-primary transition-colors">+1 (234) 567-891</a>
                     </p>
                   </div>
                 </div>
 
                 {/* Email */}
-                <div className="flex items-start space-x-4">
-                  <div className="w-12 h-12 bg-brand-blue/20 rounded-lg flex items-center justify-center flex-shrink-0">
-                    <svg className="w-6 h-6 text-brand-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <div className="flex items-start space-x-3 sm:space-x-4">
+                  <div className="w-10 h-10 sm:w-12 sm:h-12 bg-brand-blue/20 rounded-lg flex items-center justify-center flex-shrink-0">
+                    <svg className="w-5 h-5 sm:w-6 sm:h-6 text-brand-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                     </svg>
                   </div>
                   <div>
-                    <h3 className="font-semibold text-gray-900 dark:text-white mb-1">Email</h3>
-                    <p className="text-gray-600 dark:text-gray-400">
-                      <a href="mailto:info@royalkiana.com" className="hover:text-primary">info@royalkiana.com</a><br />
-                      <a href="mailto:reservations@royalkiana.com" className="hover:text-primary">reservations@royalkiana.com</a>
+                    <h3 className="font-semibold text-gray-900 dark:text-white mb-1 text-sm sm:text-base">Email</h3>
+                    <p className="text-sm sm:text-base text-gray-600 dark:text-gray-400">
+                      <a href="mailto:info@royalkiana.com" className="hover:text-primary transition-colors">info@royalkiana.com</a><br />
+                      <a href="mailto:reservations@royalkiana.com" className="hover:text-primary transition-colors">reservations@royalkiana.com</a>
                     </p>
                   </div>
                 </div>
 
                 {/* Hours */}
-                <div className="flex items-start space-x-4">
-                  <div className="w-12 h-12 bg-brand-orange/20 rounded-lg flex items-center justify-center flex-shrink-0">
-                    <svg className="w-6 h-6 text-brand-orange" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <div className="flex items-start space-x-3 sm:space-x-4">
+                  <div className="w-10 h-10 sm:w-12 sm:h-12 bg-brand-orange/20 rounded-lg flex items-center justify-center flex-shrink-0">
+                    <svg className="w-5 h-5 sm:w-6 sm:h-6 text-brand-orange" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
                     </svg>
                   </div>
                   <div>
-                    <h3 className="font-semibold text-gray-900 dark:text-white mb-1">Business Hours</h3>
-                    <p className="text-gray-600 dark:text-gray-400">
+                    <h3 className="font-semibold text-gray-900 dark:text-white mb-1 text-sm sm:text-base">Business Hours</h3>
+                    <p className="text-sm sm:text-base text-gray-600 dark:text-gray-400">
                       24/7 Reception & Concierge<br />
                       Check-in: 3:00 PM<br />
                       Check-out: 12:00 PM
@@ -152,13 +152,13 @@ const ContactPage = () => {
             </div>
 
             {/* Contact Form */}
-            <div className="bg-white dark:bg-surface-dark rounded-xl shadow-lg p-8">
-              <h2 className="text-2xl font-display font-bold text-gray-900 dark:text-white mb-6">
+            <div className="bg-white dark:bg-surface-dark rounded-xl shadow-lg p-6 sm:p-8">
+              <h2 className="text-xl sm:text-2xl font-display font-bold text-gray-900 dark:text-white mb-6">
                 Send Us a Message
               </h2>
-              <form onSubmit={handleSubmit} className="space-y-6">
+              <form onSubmit={handleSubmit} className="space-y-4 sm:space-y-6">
                 <div>
-                  <label htmlFor="name" className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
+                  <label htmlFor="name" className="block text-xs sm:text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
                     Full Name *
                   </label>
                   <input
@@ -167,13 +167,13 @@ const ContactPage = () => {
                     name="name"
                     value={formData.name}
                     onChange={handleChange}
-                    className="w-full px-4 py-3 rounded-lg border border-gray-300 dark:border-gray-600 bg-white dark:bg-background-dark text-gray-900 dark:text-white focus:ring-2 focus:ring-primary focus:border-transparent transition-colors"
+                    className="w-full px-3 sm:px-4 py-2 sm:py-3 rounded-lg border border-gray-300 dark:border-gray-600 bg-white dark:bg-background-dark text-gray-900 dark:text-white focus:ring-2 focus:ring-primary focus:border-transparent transition-colors text-sm sm:text-base"
                     required
                   />
                 </div>
 
                 <div>
-                  <label htmlFor="email" className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
+                  <label htmlFor="email" className="block text-xs sm:text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
                     Email Address *
                   </label>
                   <input
@@ -182,13 +182,13 @@ const ContactPage = () => {
                     name="email"
                     value={formData.email}
                     onChange={handleChange}
-                    className="w-full px-4 py-3 rounded-lg border border-gray-300 dark:border-gray-600 bg-white dark:bg-background-dark text-gray-900 dark:text-white focus:ring-2 focus:ring-primary focus:border-transparent transition-colors"
+                    className="w-full px-3 sm:px-4 py-2 sm:py-3 rounded-lg border border-gray-300 dark:border-gray-600 bg-white dark:bg-background-dark text-gray-900 dark:text-white focus:ring-2 focus:ring-primary focus:border-transparent transition-colors text-sm sm:text-base"
                     required
                   />
                 </div>
 
                 <div>
-                  <label htmlFor="phone" className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
+                  <label htmlFor="phone" className="block text-xs sm:text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
                     Phone Number
                   </label>
                   <input
@@ -197,12 +197,12 @@ const ContactPage = () => {
                     name="phone"
                     value={formData.phone}
                     onChange={handleChange}
-                    className="w-full px-4 py-3 rounded-lg border border-gray-300 dark:border-gray-600 bg-white dark:bg-background-dark text-gray-900 dark:text-white focus:ring-2 focus:ring-primary focus:border-transparent transition-colors"
+                    className="w-full px-3 sm:px-4 py-2 sm:py-3 rounded-lg border border-gray-300 dark:border-gray-600 bg-white dark:bg-background-dark text-gray-900 dark:text-white focus:ring-2 focus:ring-primary focus:border-transparent transition-colors text-sm sm:text-base"
                   />
                 </div>
 
                 <div>
-                  <label htmlFor="subject" className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
+                  <label htmlFor="subject" className="block text-xs sm:text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
                     Subject *
                   </label>
                   <select
@@ -210,7 +210,7 @@ const ContactPage = () => {
                     name="subject"
                     value={formData.subject}
                     onChange={handleChange}
-                    className="w-full px-4 py-3 rounded-lg border border-gray-300 dark:border-gray-600 bg-white dark:bg-background-dark text-gray-900 dark:text-white focus:ring-2 focus:ring-primary focus:border-transparent transition-colors"
+                    className="w-full px-3 sm:px-4 py-2 sm:py-3 rounded-lg border border-gray-300 dark:border-gray-600 bg-white dark:bg-background-dark text-gray-900 dark:text-white focus:ring-2 focus:ring-primary focus:border-transparent transition-colors text-sm sm:text-base"
                     required
                   >
                     <option value="general">General Inquiry</option>
@@ -222,7 +222,7 @@ const ContactPage = () => {
                 </div>
 
                 <div>
-                  <label htmlFor="message" className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
+                  <label htmlFor="message" className="block text-xs sm:text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
                     Message *
                   </label>
                   <textarea
@@ -231,14 +231,14 @@ const ContactPage = () => {
                     value={formData.message}
                     onChange={handleChange}
                     rows="5"
-                    className="w-full px-4 py-3 rounded-lg border border-gray-300 dark:border-gray-600 bg-white dark:bg-background-dark text-gray-900 dark:text-white focus:ring-2 focus:ring-primary focus:border-transparent transition-colors resize-none"
+                    className="w-full px-3 sm:px-4 py-2 sm:py-3 rounded-lg border border-gray-300 dark:border-gray-600 bg-white dark:bg-background-dark text-gray-900 dark:text-white focus:ring-2 focus:ring-primary focus:border-transparent transition-colors resize-none text-sm sm:text-base"
                     required
                   ></textarea>
                 </div>
 
                 <button
                   type="submit"
-                  className="w-full px-6 py-4 bg-primary text-white rounded-lg hover:bg-primary/90 transition-all duration-200 font-bold shadow-lg hover:shadow-xl"
+                  className="w-full px-4 sm:px-6 py-3 sm:py-4 bg-primary text-white rounded-lg hover:bg-primary/90 transition-all duration-200 font-bold shadow-lg hover:shadow-xl text-sm sm:text-base"
                 >
                   Send Message
                 </button>
